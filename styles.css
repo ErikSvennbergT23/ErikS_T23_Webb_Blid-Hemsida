@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(#a3a3a3, #989a9e, #86868f, #827b87, #7e6f7c, #785c69);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .bilder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .bilder img {
+      width: 100%;
+      max-width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  
+  .bild {
+    display: block;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .header {
+    text-align: center;
+  }
