@@ -31,6 +31,10 @@ body {
     margin: 10px;
   }
   
-  .header {
+.header {
+  text-align: center;
+ }
+
+.footer h2 {
     text-align: center;
-  }
+}
