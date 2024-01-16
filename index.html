@@ -3,27 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bild Galleri">
     <link href="styles.css" rel="stylesheet"/>
     <title>Bild Hemsida</title>
 </head>
-<header class="header">
-    <h1>Välkommen till mitt bild galleri</h1>
-</header>
-<body>
-    <article class="bilder">
-        <div class="bild"><img src="img/arushee-agrawal-pU0a4vYJwco-unsplash.webp" alt="Blue jellyfish floating upside down in a dark ocean."></div>
-        <div class="bild"><img stc="img/bob-brewer-i33uI3fHz20-unsplash.jpg" alt="Falcon flying by branches."></div>
-        <div class="bild"><img src="img/felix-rottmann-Uvx36KXixh8-unsplash.jpg" alt="Snowy forest at a distance at sunset."></div>
-        <div class="bild"><img src="img/jonathan-borba-FvPPoLTYyzE-unsplash.jpg" alt="Sandy beach with water rolling out over it."></div>
-    </article>
-</body>
-<footer class="footer">
-    <h2>Attributions</h2>
-    <ul>
-        <li>Jellyfish photo - Arushee Agrawal</li>
-        <li>Falcon photo - Bob Brewer</li>
-        <li>Snowy forest photo - Felix Rottman</li>
-        <li>Sandy beach photo - Jonathan Borba</li>
-    </ul>
-</footer>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Om</a>
+    <a href="#">Tjänster</a>
+    <a href="#">Klienter</a>
+    <a href="#">Kontakta Oss</a>
+</div>
+  
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+  
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+    <header class="header">
+        <h1>Välkommen till mitt bild galleri</h1>
+    </header>
+    <body> 
+        <article class="bilder">
+            <div class="bild"><img src="img/felix-rottmann-Uvx36KXixh8-unsplash.jpg" alt="Snowy forest at a distance at sunset." id="logga"></div>
+        </article>
+        <button id="knapp1" onclick="byttillbild()">Klicka för att byta skogen till en blå manet</button>
+        <button id="knapp2" onclick="byttilllogga()">Klicka för att byta blå manet till skogen</button>
+
+        <script src="script.js"></script>
+    </body>
+    <footer class="footer">
+        <h2>Attributions</h2>
+        <ul>
+            <li>Jellyfish photo - Arushee Agrawal</li>
+            <li>Falcon photo - Bob Brewer</li>
+            <li>Snowy forest photo - Felix Rottman</li>
+            <li>Sandy beach photo - Jonathan Borba</li>
+        </ul>
+    </footer>
+</div>
 </html>
